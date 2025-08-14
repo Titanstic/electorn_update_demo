@@ -1,6 +1,6 @@
 {
   "name": "my-electron-app",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -9,8 +9,13 @@
     "publish": "electron-builder --publish always",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Titanstic/electorn_update_demo.git"
+  },
   "build": {
     "appId": "com.novo.erp",
+    "productName": "My Electron App",
     "win": {
       "target": "nsis"
     },
