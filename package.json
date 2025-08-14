@@ -1,0 +1,36 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist":  "electron-builder",
+    "publish": "electron-builder --publish always",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.novo.erp",
+    "win": {
+      "target": "nsis"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Titanstic",
+        "repo": "electorn_update_demo"
+      }
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^37.2.6",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "electron-updater": "^6.6.2"
+  }
+}
